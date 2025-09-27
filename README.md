@@ -11,10 +11,10 @@ The project comes in **two flavors**:
 ---
 
 ## ScreenShots
-![ScreenShot](ScreenShot/ScreenShot1.png)
-![ScreenShot](ScreenShot/Text1.png)
-![ScreenShot](ScreenShot/ScreenShot2.png)
-![ScreenShot](ScreenShot/ScreenShot3.png)
+![ScreenShot](ScreenShots/ScreenShot1.png)
+![ScreenShot](ScreenShots/Text1.png)
+![ScreenShot](ScreenShots/ScreenShot2.png)
+![ScreenShot](ScreenShots/ScreenShot3.png)
 
 ## ⚡ Features
 
