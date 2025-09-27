@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photo-To-Text - Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="bar">
+      <h1>Photo-To-Text</h1>
+      <p class="subtitle">Upload an image - get text. Use CLI for low-end devices, enable AI fallback on server for richer descriptions.</p>
+    </header>
+
+    <section class="panel">
+      <div class="left">
+        <label class="dropzone" id="dropzone">
+          <img id="preview" alt="preview" />
+          <input id="fileinput" type="file" accept="image/*" hidden />
+          <div class="drop-hint">Click or drop an image here</div>
+        </label>
+
+        <div class="controls">
+          <label><input id="useAi" type="checkbox" /> Enable server AI fallback (heavy)</label>
+          <button id="uploadBtn" class="btn">Process image</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="status" id="status">Idle</div>
+        <textarea id="output" placeholder="OCR or AI output will appear here" readonly></textarea>
+        <div class="actions">
+          <button id="saveBtn" class="btn">Save text</button>
+          <a id="downloadLink" style="display:none"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>Local OCR uses server Python OCR. Optional C / Rust wrappers call the tesseract CLI for speed.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
